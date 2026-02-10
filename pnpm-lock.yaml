@@ -1,0 +1,827 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ags-ts:
+        specifier: ^1.0.6
+        version: 1.0.6(prettier@3.8.1)
+      fuse.js:
+        specifier: ^7.1.0
+        version: 7.1.0
+      gnim:
+        specifier: ^1.9.0
+        version: 1.9.0
+      gnim-hooks:
+        specifier: ^1.0.0
+        version: 1.0.0(gnim@1.9.0)
+      gnim-schemas:
+        specifier: ^0.3.0
+        version: 0.3.0
+
+packages:
+
+  '@girs/atk-1.0@2.45.1-4.0.0-beta.1':
+    resolution: {integrity: sha512-TAaYd2V2ZD+D94J+azbG4z4q3awRLdjPlZMyhk5pqb46EWdGnJYdcji/m57hlS2n9N6QeZet66tnTkv9MuE6AA==}
+
+  '@girs/atk-1.0@2.58.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-rfLlLlAecHE1uAqK81DHZT27E1nVwN/pAHtgbgDUcu70UdHoCYAsQymLjk/tuDcTX0Lwp6U9x6w+GHG1sbYlQA==}
+
+  '@girs/cairo-1.0@1.0.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-VJa0vw9teZjCydDzWIcbNBwT37MSej52rqwBuQ/ir7+72+7dpzeudkNOOif1nDIulGu+RLAy4cgWbguQhsUH/Q==}
+
+  '@girs/dbusmenu-0.4@0.4.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-byeyUlM7NWv2oRZQ+3EYe17zxueeE5eanmQEYp0YwNbXVbeWAoUKWuqdVJRaeiIBUjf14+rhkQrii9d3Suw4Pg==}
+
+  '@girs/dbusmenugtk3-0.4@0.4.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-Z1r+PBwgNnayfZZf+D4o6W4t6qk2WsDgXPKlJd+f0S1UzAoKGNlGukDAAyM8u4vU1dEI/Tl3BjwqX2cd2mr5GQ==}
+
+  '@girs/freetype2-2.0@2.0.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-543dlQheKHSVWIatqHNBiLceIWYzIJDXvofR3PfgarKMMi0IRkn1TndzxUxsLC4Eu24KgOKGZYjU1YPUMVGbgg==}
+
+  '@girs/gdk-3.0@3.24.39-3.2.2':
+    resolution: {integrity: sha512-nZ6DUQ/UfcW2y3ZtE1pfhBgerUkacXYpCuHJB2cp2moWHt82/w5H7zsUSr43rSzQqkFZCPQOsjUSX0VAJQfYTw==}
+
+  '@girs/gdk-3.0@3.24.39-4.0.0-beta.1':
+    resolution: {integrity: sha512-lvv8d1U2LYI6IE/uCOny4JC60J2f94LdkHplZWqmYIi4ryA913kRG5q2OoviL4SO9OQq10OWlQXabobpo0ttZQ==}
+
+  '@girs/gdk-3.0@3.24.50-4.0.0-beta.38':
+    resolution: {integrity: sha512-AWcYkOE2z/oRtcUO4HH7RpxeKGARNoyhv/xB01y2fn4tVHcHmA6VbjOQMdSbCYk0CTp25PcsPxPM2ET7g+E/rw==}
+
+  '@girs/gdkpixbuf-2.0@2.0.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-L8NE18rhj100lRGMnf7lNUdr6pHw2co1UtExxDnglba5lNee4NoyF/u8g4Mk3toPU0fAu+ug91HJ4o2mIJd7MQ==}
+
+  '@girs/gio-2.0@2.77.0-4.0.0-beta.1':
+    resolution: {integrity: sha512-rbfj2ijOWtJ26D6LNPmGP2NWq2b/SHXYIsJeVlyvnp8euKAs53s/a+oagqXlMSvVvSEZ/XdP44vOOOxlTq4CwQ==}
+
+  '@girs/gio-2.0@2.80.0-4.0.0-beta.5':
+    resolution: {integrity: sha512-536nFvNyOD8PupjWdr1HtZn46+8FsOWKagd5RlJuhiZwOR5QGp47Wv9MBzB0wayrhzt7ik1ZYtnnYGNvK4gvug==}
+
+  '@girs/gio-2.0@2.86.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-hKCyDEqSIgqcZeFf63KNrUnrYtAuJ0yfIypbdLgNEMbJBPQ/e3ZiwzWa7i3OPCh52Cnl9qYRdj8MSbZndpyZiQ==}
+
+  '@girs/gjs@3.3.0':
+    resolution: {integrity: sha512-5cQaouORn53vLM+cFAEOzJuzcm47eH86R2OGUgrHIL4KT7sEm+BKkhqlI67m+iJUMl/I72P2Hfe+Am4jl0YxlQ==}
+
+  '@girs/gjs@4.0.0-beta.38':
+    resolution: {integrity: sha512-eI/9lfI1mQpXN8RsKiNRFWJso6LgQe9Eb+YxLAdKarD5fccvIRx3chsyIyhw5tYH7VvgaZkqm1c4GX7pDDokBQ==}
+
+  '@girs/glib-2.0@2.76.1-3.2.3':
+    resolution: {integrity: sha512-pY/ZE2WPco9E8Cz5+wTqxEOdVpipEQBRDJXVd/KQCoRjTSvgoMLLEE8B84W0LgOgR8ns99XtGZrf0U0y4qFqyA==}
+
+  '@girs/glib-2.0@2.77.0-3.2.2':
+    resolution: {integrity: sha512-cFWgYKKBR58+er7MOYTFcws5MHEQUD74VaGUEBLUTjFh9EsyIXOOcaU+Z6cteObGDo9ZYdlr8RBAdKI8H18sqQ==}
+
+  '@girs/glib-2.0@2.77.0-4.0.0-beta.1':
+    resolution: {integrity: sha512-ldYtWNC9hUgHJdZo06FsDFGXjoZCniVTK8ICTDQ5Gedpb4LqpfVLfIGp7B2PJoIsuHBQWqQ9MIKQPMDngHrYZw==}
+
+  '@girs/glib-2.0@2.78.0-3.3.0':
+    resolution: {integrity: sha512-XuoKuOm9aNVou+yWtlbcwEcNI7v1gCJUBQboPlZxft+o9CnP2FmwRntqZnfhZepGmLbASMA8Ow5iEL8glNwVsw==}
+
+  '@girs/glib-2.0@2.80.0-4.0.0-beta.5':
+    resolution: {integrity: sha512-gu/5ZWT7OwYp0S/EvfBZLtHttcfnTYzPo1Dp1gA/7xahLPvYPhlr0Uxb3IjQvvBMbqE9vsxxqVfqHUkkdfZw0Q==}
+
+  '@girs/glib-2.0@2.80.2-4.0.0-beta.10':
+    resolution: {integrity: sha512-7emzaX8KI4NxRxd2bFS4ZZEsDkpZrZN4KYmeGv4WBTzhSDWPPqLz32HZf+DYNOdh5tpIWT3nuLr/8pnbdD/NuQ==}
+
+  '@girs/glib-2.0@2.86.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-TFbrh5+Y3pb61synbhi37VrRzh0e+JQaRCzfGbe7oewUq0v7Sb8eSi2Fmj98r5tCizaRYptqgt6bxG7G5cFzVg==}
+
+  '@girs/gmodule-2.0@2.0.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-BmspJtwdBSfCJRZQMxn3gx6H9FNcoqCebFXK2UKknq18DIo8U2q4iN/jQBWPoLh2siK9LhCdL2egoyXteTy1NA==}
+
+  '@girs/gobject-2.0@2.76.1-3.2.3':
+    resolution: {integrity: sha512-9X35d1ZRO4xY9b0iOm51MwjfbgvOGQtNs2A9IWcSlaoI4LB5mCRlPlQ1UFhpqcbbmdrL+Cce/0p3F36x5rn/dg==}
+
+  '@girs/gobject-2.0@2.77.0-4.0.0-beta.1':
+    resolution: {integrity: sha512-x3bWQ71Tq1waRP9MuQHfq2NbokJzbmJpzbCzJFKaN7+Wg5OoR/jnseTUFMedJykbf3UGPQPYeMu9SyW+Vwh3nA==}
+
+  '@girs/gobject-2.0@2.78.0-3.3.0':
+    resolution: {integrity: sha512-s6IpE1o9uAf8kZgncWjdYerErhWXgszIFHXEvvyKR8csI36SFD730CqJRiCepP2okoJmD0Vi3jrnuq5jb8wIMA==}
+
+  '@girs/gobject-2.0@2.80.0-4.0.0-beta.5':
+    resolution: {integrity: sha512-KSEGFvcKJr5TqrvA6JgtJ5ywTeXZABCCWDcf+/SEBocKZBUZySAeh/PA9kN7o9AktcESJVYo0v7BRQQluwBWTg==}
+
+  '@girs/gobject-2.0@2.80.2-4.0.0-beta.10':
+    resolution: {integrity: sha512-7kY42rLHlvHwcr2TNlpLU2bnMiY9s/Vod8bsr+PDT6OIPh1gtyuzJvooDVve/PXbkjD6FGbJREco3EPftvJelw==}
+
+  '@girs/gobject-2.0@2.86.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-oYrm6Gb/tCQosMkN8Beu5jqGRkJ7LED4O1H1dKYOI4SnP1Ojb66A9ECy78yTO8piBtMopsbRODV81yKniVtKKA==}
+
+  '@girs/gtk-3.0@3.24.39-4.0.0-beta.1':
+    resolution: {integrity: sha512-TZfeNnzkou7VuJsHAaY1Jxse/nQosbkCi66Hk5OpDki45ZQoRjWMgme1LFdklm2NCupCs4EbSYsZ/Oa28k9Geg==}
+
+  '@girs/gtk-3.0@3.24.50-4.0.0-beta.38':
+    resolution: {integrity: sha512-tiTRrfVWHK/fIaZtNfXz8tWWE7Ot+wBN6HgKmugnvyJFUgbqSwug50AUdWFct0kyIL1tOPql3V6oxu8k2IuBWg==}
+
+  '@girs/gvc-1.0@1.0.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-AUJ+6Aj7y9Q/3RYTCQJBtr1sckUodwJaE3ue1Ap7bCOy/ybiZdCGlucJqSfpT8B3VV5SUztqlxEcOhyGgpvtNQ==}
+
+  '@girs/harfbuzz-0.0@11.5.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-XRf/neZYpEkinNZ8SCRKIao3RNVJzMeYcjuO1b1tbqVCrN7uVZ+MIaDW5NjWKi0K6IQSyZWdDgkzrtOrIN4CWQ==}
+
+  '@girs/harfbuzz-0.0@7.1.0-3.2.3':
+    resolution: {integrity: sha512-z9fpiJBni97ioU2f1BIrfHCoTD2HDt0h2kaa0EL9n6DvzhntRXUc56cRRRohhXMyIwfUJmMOPuiqMFTI8kt4OQ==}
+
+  '@girs/harfbuzz-0.0@8.1.1-4.0.0-beta.10':
+    resolution: {integrity: sha512-nrhig+8jQS3ZyVwmIlJqPuTX94tz58UE+vSp8xMNpaefwdz8RuykoLXS2sB2PPcU5JbckjJ2uxFH6KkDZWvyiQ==}
+
+  '@girs/harfbuzz-0.0@8.3.1-4.0.0-beta.5':
+    resolution: {integrity: sha512-cz8NrQ0XRdJRanCZq8TVdevc3IgzISQnr1ZGXv+g49bFJecvef5zW3NWdWhPI7MDjPIgHQB77L32NQyzCjyTyg==}
+
+  '@girs/nm-1.0@1.45.1-4.0.0-beta.3':
+    resolution: {integrity: sha512-fZ1mk2JOfhjE3TUineIqwXXhOfiDKc8oX/jC/X7NL1LBsR7BrEkzRJF4031EUas0y8hHNp/AwlXiuedQrSxdgA==}
+
+  '@girs/pango-1.0@1.51.0-4.0.0-beta.3':
+    resolution: {integrity: sha512-i8i6UJTbhcCRw2I+DtkNHy0oQuBuyxPkoY+/ubaEk1ri23Ew0RFoPiml9bpevxn7rgdAtfT55umPpgnQ+KHe+g==}
+
+  '@girs/pango-1.0@1.57.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-fnTzVVhKb4XjGrnuqk9X++KDe2bk84Hg5472O2UrtIT1A6dzMS6gWhSvaw0ULZH/Ypj9WN12B0oceWynR6unLw==}
+
+  '@girs/xlib-2.0@2.0.0-4.0.0-beta.38':
+    resolution: {integrity: sha512-PK3s6NowmlY65E/Y9BqwR1lVKsZSWQJm/za1I47SvL1IVWcEHYWRZdDtYZjfmbUlUqqKkfoMt+bUCmhmQk/eYQ==}
+
+  '@types/debug@4.1.12':
+    resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
+
+  '@types/mdast@4.0.4':
+    resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
+
+  '@types/ms@2.1.0':
+    resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
+
+  '@types/unist@3.0.3':
+    resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
+
+  ags-ts@1.0.6:
+    resolution: {integrity: sha512-7ehbwctv+Dq3lY8l/jlIQakii5vZY5UROjU+RYP3YAYg9d7naRVcR5j4BldSBHhXmwbjdNI3FZ/dX9EJ86RGpQ==}
+
+  binary-searching@2.0.5:
+    resolution: {integrity: sha512-v4N2l3RxL+m4zDxyxz3Ne2aTmiPn8ZUpKFpdPtO+ItW1NcTCXA7JeHG5GMBSvoKSkQZ9ycS+EouDVxYB9ufKWA==}
+
+  character-entities@2.0.2:
+    resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
+
+  comment-parser@1.4.5:
+    resolution: {integrity: sha512-aRDkn3uyIlCFfk5NUA+VdwMmMsh8JGhc4hapfV4yxymHGQ3BVskMQfoXGpCo5IoBuQ9tS5iiVKhCpTcB4pW4qw==}
+    engines: {node: '>= 12.0.0'}
+
+  debug@4.4.3:
+    resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  decode-named-character-reference@1.3.0:
+    resolution: {integrity: sha512-GtpQYB283KrPp6nRw50q3U9/VfOutZOe103qlN7BPP6Ad27xYnOIWv4lPzo8HCAL+mMZofJ9KEy30fq6MfaK6Q==}
+
+  dequal@2.0.3:
+    resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
+    engines: {node: '>=6'}
+
+  devlop@1.1.0:
+    resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
+
+  fuse.js@7.1.0:
+    resolution: {integrity: sha512-trLf4SzuuUxfusZADLINj+dE8clK1frKdmqiJNb1Es75fmI5oY6X2mxLVUciLLjxqw/xr72Dhy+lER6dGd02FQ==}
+    engines: {node: '>=10'}
+
+  gnim-hooks@1.0.0:
+    resolution: {integrity: sha512-FGLqQoHU6yLC1bkNLarOakHssXg/MlLP/uYfu2WE3AqJ2V3+4Rw+YL+vbXC+5HfhPaNQse7EbK/asVHxp8s3SQ==}
+    engines: {gjs: '>=1.79.0'}
+    peerDependencies:
+      gnim: ^1.9.0
+
+  gnim-schemas@0.3.0:
+    resolution: {integrity: sha512-ctQ8/iTpl8ZkA54BOj0iDbPlAT7GuEVLJz+xDSkY0ZaYyUIdLGBx5KMuut0Yk+WOwrhwEvcHqICgE5dav8gEIA==}
+    engines: {gjs: '>=1.79.0'}
+    hasBin: true
+
+  gnim@1.9.0:
+    resolution: {integrity: sha512-ubtl+BkcHFYImLQN/dg7XtM6VpOMZy1KlXOF+W/QlBVFG+c07lf+hC+bAkPqkyLwL1YUEIoLtk7iXlIuhbOYPA==}
+    engines: {gjs: '>=1.79.0'}
+
+  mdast-util-from-markdown@2.0.2:
+    resolution: {integrity: sha512-uZhTV/8NBuw0WHkPTrCqDOl0zVe1BIng5ZtHoDk49ME1qqcjYmmLmOf0gELgcRMxN4w2iuIeVso5/6QymSrgmA==}
+
+  mdast-util-to-string@4.0.0:
+    resolution: {integrity: sha512-0H44vDimn51F0YwvxSJSm0eCDOJTRlmN0R1yBh4HLj9wiV1Dn0QoXGbvFAWj2hSItVTlCmBF1hqKlIyUBVFLPg==}
+
+  micromark-core-commonmark@2.0.3:
+    resolution: {integrity: sha512-RDBrHEMSxVFLg6xvnXmb1Ayr2WzLAWjeSATAoxwKYJV94TeNavgoIdA0a9ytzDSVzBy2YKFK+emCPOEibLeCrg==}
+
+  micromark-factory-destination@2.0.1:
+    resolution: {integrity: sha512-Xe6rDdJlkmbFRExpTOmRj9N3MaWmbAgdpSrBQvCFqhezUn4AHqJHbaEnfbVYYiexVSs//tqOdY/DxhjdCiJnIA==}
+
+  micromark-factory-label@2.0.1:
+    resolution: {integrity: sha512-VFMekyQExqIW7xIChcXn4ok29YE3rnuyveW3wZQWWqF4Nv9Wk5rgJ99KzPvHjkmPXF93FXIbBp6YdW3t71/7Vg==}
+
+  micromark-factory-space@2.0.1:
+    resolution: {integrity: sha512-zRkxjtBxxLd2Sc0d+fbnEunsTj46SWXgXciZmHq0kDYGnck/ZSGj9/wULTV95uoeYiK5hRXP2mJ98Uo4cq/LQg==}
+
+  micromark-factory-title@2.0.1:
+    resolution: {integrity: sha512-5bZ+3CjhAd9eChYTHsjy6TGxpOFSKgKKJPJxr293jTbfry2KDoWkhBb6TcPVB4NmzaPhMs1Frm9AZH7OD4Cjzw==}
+
+  micromark-factory-whitespace@2.0.1:
+    resolution: {integrity: sha512-Ob0nuZ3PKt/n0hORHyvoD9uZhr+Za8sFoP+OnMcnWK5lngSzALgQYKMr9RJVOWLqQYuyn6ulqGWSXdwf6F80lQ==}
+
+  micromark-util-character@2.1.1:
+    resolution: {integrity: sha512-wv8tdUTJ3thSFFFJKtpYKOYiGP2+v96Hvk4Tu8KpCAsTMs6yi+nVmGh1syvSCsaxz45J6Jbw+9DD6g97+NV67Q==}
+
+  micromark-util-chunked@2.0.1:
+    resolution: {integrity: sha512-QUNFEOPELfmvv+4xiNg2sRYeS/P84pTW0TCgP5zc9FpXetHY0ab7SxKyAQCNCc1eK0459uoLI1y5oO5Vc1dbhA==}
+
+  micromark-util-classify-character@2.0.1:
+    resolution: {integrity: sha512-K0kHzM6afW/MbeWYWLjoHQv1sgg2Q9EccHEDzSkxiP/EaagNzCm7T/WMKZ3rjMbvIpvBiZgwR3dKMygtA4mG1Q==}
+
+  micromark-util-combine-extensions@2.0.1:
+    resolution: {integrity: sha512-OnAnH8Ujmy59JcyZw8JSbK9cGpdVY44NKgSM7E9Eh7DiLS2E9RNQf0dONaGDzEG9yjEl5hcqeIsj4hfRkLH/Bg==}
+
+  micromark-util-decode-numeric-character-reference@2.0.2:
+    resolution: {integrity: sha512-ccUbYk6CwVdkmCQMyr64dXz42EfHGkPQlBj5p7YVGzq8I7CtjXZJrubAYezf7Rp+bjPseiROqe7G6foFd+lEuw==}
+
+  micromark-util-decode-string@2.0.1:
+    resolution: {integrity: sha512-nDV/77Fj6eH1ynwscYTOsbK7rR//Uj0bZXBwJZRfaLEJ1iGBR6kIfNmlNqaqJf649EP0F3NWNdeJi03elllNUQ==}
+
+  micromark-util-encode@2.0.1:
+    resolution: {integrity: sha512-c3cVx2y4KqUnwopcO9b/SCdo2O67LwJJ/UyqGfbigahfegL9myoEFoDYZgkT7f36T0bLrM9hZTAaAyH+PCAXjw==}
+
+  micromark-util-html-tag-name@2.0.1:
+    resolution: {integrity: sha512-2cNEiYDhCWKI+Gs9T0Tiysk136SnR13hhO8yW6BGNyhOC4qYFnwF1nKfD3HFAIXA5c45RrIG1ub11GiXeYd1xA==}
+
+  micromark-util-normalize-identifier@2.0.1:
+    resolution: {integrity: sha512-sxPqmo70LyARJs0w2UclACPUUEqltCkJ6PhKdMIDuJ3gSf/Q+/GIe3WKl0Ijb/GyH9lOpUkRAO2wp0GVkLvS9Q==}
+
+  micromark-util-resolve-all@2.0.1:
+    resolution: {integrity: sha512-VdQyxFWFT2/FGJgwQnJYbe1jjQoNTS4RjglmSjTUlpUMa95Htx9NHeYW4rGDJzbjvCsl9eLjMQwGeElsqmzcHg==}
+
+  micromark-util-sanitize-uri@2.0.1:
+    resolution: {integrity: sha512-9N9IomZ/YuGGZZmQec1MbgxtlgougxTodVwDzzEouPKo3qFWvymFHWcnDi2vzV1ff6kas9ucW+o3yzJK9YB1AQ==}
+
+  micromark-util-subtokenize@2.1.0:
+    resolution: {integrity: sha512-XQLu552iSctvnEcgXw6+Sx75GflAPNED1qx7eBJ+wydBb2KCbRZe+NwvIEEMM83uml1+2WSXpBAcp9IUCgCYWA==}
+
+  micromark-util-symbol@2.0.1:
+    resolution: {integrity: sha512-vs5t8Apaud9N28kgCrRUdEed4UJ+wWNvicHLPxCa9ENlYuAY31M0ETy5y1vA33YoNPDFTghEbnh6efaE8h4x0Q==}
+
+  micromark-util-types@2.0.2:
+    resolution: {integrity: sha512-Yw0ECSpJoViF1qTU4DC6NwtC4aWGt1EkzaQB8KPPyCRR8z9TWeV0HbEFGTO+ZY1wB22zmxnJqhPyTpOVCpeHTA==}
+
+  micromark@4.0.2:
+    resolution: {integrity: sha512-zpe98Q6kvavpCr1NPVSCMebCKfD7CA2NqZ+rykeNhONIJBpc1tFKt9hucLGwha3jNTNI8lHpctWJWoimVF4PfA==}
+
+  ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+
+  prettier-plugin-jsdoc@1.8.0:
+    resolution: {integrity: sha512-byW8EBZ1DSA3CPdDGBXfcdqqhh2eq0+HlIOPTGZ6rf9O2p/AwBmtS0e49ot5ZeOdcszj81FyzbyHr/VS0eYpCg==}
+    engines: {node: '>=14.13.1 || >=16.0.0'}
+    peerDependencies:
+      prettier: ^3.0.0
+
+  prettier@3.8.1:
+    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+  unist-util-stringify-position@4.0.0:
+    resolution: {integrity: sha512-0ASV06AAoKCDkS2+xw5RXJywruurpbC4JZSm7nr7MOt1ojAzvyyaO+UxZf18j8FCF6kmzCZKcAgN/yu2gm2XgQ==}
+
+snapshots:
+
+  '@girs/atk-1.0@2.45.1-4.0.0-beta.1':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/gobject-2.0': 2.77.0-4.0.0-beta.1
+
+  '@girs/atk-1.0@2.58.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/cairo-1.0@1.0.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/dbusmenu-0.4@0.4.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/dbusmenugtk3-0.4@0.4.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/atk-1.0': 2.58.0-4.0.0-beta.38
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/dbusmenu-0.4': 0.4.0-4.0.0-beta.38
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gdk-3.0': 3.24.50-4.0.0-beta.38
+      '@girs/gdkpixbuf-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gio-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gtk-3.0': 3.24.50-4.0.0-beta.38
+      '@girs/harfbuzz-0.0': 11.5.0-4.0.0-beta.38
+      '@girs/pango-1.0': 1.57.0-4.0.0-beta.38
+      '@girs/xlib-2.0': 2.0.0-4.0.0-beta.38
+
+  '@girs/freetype2-2.0@2.0.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/gdk-3.0@3.24.39-3.2.2':
+    dependencies:
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gdkpixbuf-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gio-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/gjs': 3.3.0
+      '@girs/glib-2.0': 2.77.0-3.2.2
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/harfbuzz-0.0': 7.1.0-3.2.3
+      '@girs/pango-1.0': 1.51.0-4.0.0-beta.3
+
+  '@girs/gdk-3.0@3.24.39-4.0.0-beta.1':
+    dependencies:
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gdkpixbuf-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gio-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/harfbuzz-0.0': 8.1.1-4.0.0-beta.10
+      '@girs/pango-1.0': 1.51.0-4.0.0-beta.3
+
+  '@girs/gdk-3.0@3.24.50-4.0.0-beta.38':
+    dependencies:
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gdkpixbuf-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gio-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/harfbuzz-0.0': 11.5.0-4.0.0-beta.38
+      '@girs/pango-1.0': 1.57.0-4.0.0-beta.38
+
+  '@girs/gdkpixbuf-2.0@2.0.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gio-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/gio-2.0@2.77.0-4.0.0-beta.1':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/gobject-2.0': 2.77.0-4.0.0-beta.1
+
+  '@girs/gio-2.0@2.80.0-4.0.0-beta.5':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.80.0-4.0.0-beta.5
+      '@girs/gobject-2.0': 2.80.0-4.0.0-beta.5
+
+  '@girs/gio-2.0@2.86.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/gjs@3.3.0':
+    dependencies:
+      '@girs/glib-2.0': 2.78.0-3.3.0
+      '@girs/gobject-2.0': 2.78.0-3.3.0
+
+  '@girs/gjs@4.0.0-beta.38':
+    dependencies:
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/gio-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/glib-2.0@2.76.1-3.2.3':
+    dependencies:
+      '@girs/gjs': 3.3.0
+      '@girs/gobject-2.0': 2.76.1-3.2.3
+
+  '@girs/glib-2.0@2.77.0-3.2.2':
+    dependencies:
+      '@girs/gjs': 3.3.0
+      '@girs/gobject-2.0': 2.77.0-4.0.0-beta.1
+
+  '@girs/glib-2.0@2.77.0-4.0.0-beta.1':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/gobject-2.0': 2.77.0-4.0.0-beta.1
+
+  '@girs/glib-2.0@2.78.0-3.3.0':
+    dependencies:
+      '@girs/gjs': 3.3.0
+      '@girs/gobject-2.0': 2.78.0-3.3.0
+
+  '@girs/glib-2.0@2.80.0-4.0.0-beta.5':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/gobject-2.0': 2.80.0-4.0.0-beta.5
+
+  '@girs/glib-2.0@2.80.2-4.0.0-beta.10':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/gobject-2.0': 2.80.2-4.0.0-beta.10
+
+  '@girs/glib-2.0@2.86.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/gmodule-2.0@2.0.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/gobject-2.0@2.76.1-3.2.3':
+    dependencies:
+      '@girs/gjs': 3.3.0
+      '@girs/glib-2.0': 2.76.1-3.2.3
+
+  '@girs/gobject-2.0@2.77.0-4.0.0-beta.1':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.77.0-4.0.0-beta.1
+
+  '@girs/gobject-2.0@2.78.0-3.3.0':
+    dependencies:
+      '@girs/gjs': 3.3.0
+      '@girs/glib-2.0': 2.78.0-3.3.0
+
+  '@girs/gobject-2.0@2.80.0-4.0.0-beta.5':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.80.0-4.0.0-beta.5
+
+  '@girs/gobject-2.0@2.80.2-4.0.0-beta.10':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.80.2-4.0.0-beta.10
+
+  '@girs/gobject-2.0@2.86.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/gtk-3.0@3.24.39-4.0.0-beta.1':
+    dependencies:
+      '@girs/atk-1.0': 2.45.1-4.0.0-beta.1
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gdk-3.0': 3.24.39-4.0.0-beta.1
+      '@girs/gdkpixbuf-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gio-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/harfbuzz-0.0': 8.1.1-4.0.0-beta.10
+      '@girs/pango-1.0': 1.51.0-4.0.0-beta.3
+      '@girs/xlib-2.0': 2.0.0-4.0.0-beta.38
+
+  '@girs/gtk-3.0@3.24.50-4.0.0-beta.38':
+    dependencies:
+      '@girs/atk-1.0': 2.58.0-4.0.0-beta.38
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gdk-3.0': 3.24.50-4.0.0-beta.38
+      '@girs/gdkpixbuf-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gio-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/harfbuzz-0.0': 11.5.0-4.0.0-beta.38
+      '@girs/pango-1.0': 1.57.0-4.0.0-beta.38
+      '@girs/xlib-2.0': 2.0.0-4.0.0-beta.38
+
+  '@girs/gvc-1.0@1.0.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gio-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/harfbuzz-0.0@11.5.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@girs/harfbuzz-0.0@7.1.0-3.2.3':
+    dependencies:
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gjs': 3.3.0
+      '@girs/glib-2.0': 2.76.1-3.2.3
+      '@girs/gobject-2.0': 2.76.1-3.2.3
+
+  '@girs/harfbuzz-0.0@8.1.1-4.0.0-beta.10':
+    dependencies:
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.80.2-4.0.0-beta.10
+      '@girs/gobject-2.0': 2.80.2-4.0.0-beta.10
+
+  '@girs/harfbuzz-0.0@8.3.1-4.0.0-beta.5':
+    dependencies:
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.80.0-4.0.0-beta.5
+      '@girs/gobject-2.0': 2.80.0-4.0.0-beta.5
+
+  '@girs/nm-1.0@1.45.1-4.0.0-beta.3':
+    dependencies:
+      '@girs/gio-2.0': 2.80.0-4.0.0-beta.5
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.80.0-4.0.0-beta.5
+      '@girs/gobject-2.0': 2.80.0-4.0.0-beta.5
+
+  '@girs/pango-1.0@1.51.0-4.0.0-beta.3':
+    dependencies:
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gio-2.0': 2.80.0-4.0.0-beta.5
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.80.0-4.0.0-beta.5
+      '@girs/gobject-2.0': 2.80.0-4.0.0-beta.5
+      '@girs/harfbuzz-0.0': 8.3.1-4.0.0-beta.5
+
+  '@girs/pango-1.0@1.57.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/freetype2-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gio-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/glib-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+      '@girs/harfbuzz-0.0': 11.5.0-4.0.0-beta.38
+
+  '@girs/xlib-2.0@2.0.0-4.0.0-beta.38':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.38
+      '@girs/gobject-2.0': 2.86.0-4.0.0-beta.38
+
+  '@types/debug@4.1.12':
+    dependencies:
+      '@types/ms': 2.1.0
+
+  '@types/mdast@4.0.4':
+    dependencies:
+      '@types/unist': 3.0.3
+
+  '@types/ms@2.1.0': {}
+
+  '@types/unist@3.0.3': {}
+
+  ags-ts@1.0.6(prettier@3.8.1):
+    dependencies:
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/dbusmenugtk3-0.4': 0.4.0-4.0.0-beta.38
+      '@girs/gdk-3.0': 3.24.39-3.2.2
+      '@girs/gdkpixbuf-2.0': 2.0.0-4.0.0-beta.38
+      '@girs/gio-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/glib-2.0': 2.77.0-3.2.2
+      '@girs/gobject-2.0': 2.77.0-4.0.0-beta.1
+      '@girs/gtk-3.0': 3.24.39-4.0.0-beta.1
+      '@girs/gvc-1.0': 1.0.0-4.0.0-beta.38
+      '@girs/nm-1.0': 1.45.1-4.0.0-beta.3
+      prettier-plugin-jsdoc: 1.8.0(prettier@3.8.1)
+    transitivePeerDependencies:
+      - prettier
+      - supports-color
+
+  binary-searching@2.0.5: {}
+
+  character-entities@2.0.2: {}
+
+  comment-parser@1.4.5: {}
+
+  debug@4.4.3:
+    dependencies:
+      ms: 2.1.3
+
+  decode-named-character-reference@1.3.0:
+    dependencies:
+      character-entities: 2.0.2
+
+  dequal@2.0.3: {}
+
+  devlop@1.1.0:
+    dependencies:
+      dequal: 2.0.3
+
+  fuse.js@7.1.0: {}
+
+  gnim-hooks@1.0.0(gnim@1.9.0):
+    dependencies:
+      gnim: 1.9.0
+
+  gnim-schemas@0.3.0:
+    dependencies:
+      gnim: 1.9.0
+
+  gnim@1.9.0: {}
+
+  mdast-util-from-markdown@2.0.2:
+    dependencies:
+      '@types/mdast': 4.0.4
+      '@types/unist': 3.0.3
+      decode-named-character-reference: 1.3.0
+      devlop: 1.1.0
+      mdast-util-to-string: 4.0.0
+      micromark: 4.0.2
+      micromark-util-decode-numeric-character-reference: 2.0.2
+      micromark-util-decode-string: 2.0.1
+      micromark-util-normalize-identifier: 2.0.1
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+      unist-util-stringify-position: 4.0.0
+    transitivePeerDependencies:
+      - supports-color
+
+  mdast-util-to-string@4.0.0:
+    dependencies:
+      '@types/mdast': 4.0.4
+
+  micromark-core-commonmark@2.0.3:
+    dependencies:
+      decode-named-character-reference: 1.3.0
+      devlop: 1.1.0
+      micromark-factory-destination: 2.0.1
+      micromark-factory-label: 2.0.1
+      micromark-factory-space: 2.0.1
+      micromark-factory-title: 2.0.1
+      micromark-factory-whitespace: 2.0.1
+      micromark-util-character: 2.1.1
+      micromark-util-chunked: 2.0.1
+      micromark-util-classify-character: 2.0.1
+      micromark-util-html-tag-name: 2.0.1
+      micromark-util-normalize-identifier: 2.0.1
+      micromark-util-resolve-all: 2.0.1
+      micromark-util-subtokenize: 2.1.0
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+
+  micromark-factory-destination@2.0.1:
+    dependencies:
+      micromark-util-character: 2.1.1
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+
+  micromark-factory-label@2.0.1:
+    dependencies:
+      devlop: 1.1.0
+      micromark-util-character: 2.1.1
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+
+  micromark-factory-space@2.0.1:
+    dependencies:
+      micromark-util-character: 2.1.1
+      micromark-util-types: 2.0.2
+
+  micromark-factory-title@2.0.1:
+    dependencies:
+      micromark-factory-space: 2.0.1
+      micromark-util-character: 2.1.1
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+
+  micromark-factory-whitespace@2.0.1:
+    dependencies:
+      micromark-factory-space: 2.0.1
+      micromark-util-character: 2.1.1
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+
+  micromark-util-character@2.1.1:
+    dependencies:
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+
+  micromark-util-chunked@2.0.1:
+    dependencies:
+      micromark-util-symbol: 2.0.1
+
+  micromark-util-classify-character@2.0.1:
+    dependencies:
+      micromark-util-character: 2.1.1
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+
+  micromark-util-combine-extensions@2.0.1:
+    dependencies:
+      micromark-util-chunked: 2.0.1
+      micromark-util-types: 2.0.2
+
+  micromark-util-decode-numeric-character-reference@2.0.2:
+    dependencies:
+      micromark-util-symbol: 2.0.1
+
+  micromark-util-decode-string@2.0.1:
+    dependencies:
+      decode-named-character-reference: 1.3.0
+      micromark-util-character: 2.1.1
+      micromark-util-decode-numeric-character-reference: 2.0.2
+      micromark-util-symbol: 2.0.1
+
+  micromark-util-encode@2.0.1: {}
+
+  micromark-util-html-tag-name@2.0.1: {}
+
+  micromark-util-normalize-identifier@2.0.1:
+    dependencies:
+      micromark-util-symbol: 2.0.1
+
+  micromark-util-resolve-all@2.0.1:
+    dependencies:
+      micromark-util-types: 2.0.2
+
+  micromark-util-sanitize-uri@2.0.1:
+    dependencies:
+      micromark-util-character: 2.1.1
+      micromark-util-encode: 2.0.1
+      micromark-util-symbol: 2.0.1
+
+  micromark-util-subtokenize@2.1.0:
+    dependencies:
+      devlop: 1.1.0
+      micromark-util-chunked: 2.0.1
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+
+  micromark-util-symbol@2.0.1: {}
+
+  micromark-util-types@2.0.2: {}
+
+  micromark@4.0.2:
+    dependencies:
+      '@types/debug': 4.1.12
+      debug: 4.4.3
+      decode-named-character-reference: 1.3.0
+      devlop: 1.1.0
+      micromark-core-commonmark: 2.0.3
+      micromark-factory-space: 2.0.1
+      micromark-util-character: 2.1.1
+      micromark-util-chunked: 2.0.1
+      micromark-util-combine-extensions: 2.0.1
+      micromark-util-decode-numeric-character-reference: 2.0.2
+      micromark-util-encode: 2.0.1
+      micromark-util-normalize-identifier: 2.0.1
+      micromark-util-resolve-all: 2.0.1
+      micromark-util-sanitize-uri: 2.0.1
+      micromark-util-subtokenize: 2.1.0
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.2
+    transitivePeerDependencies:
+      - supports-color
+
+  ms@2.1.3: {}
+
+  prettier-plugin-jsdoc@1.8.0(prettier@3.8.1):
+    dependencies:
+      binary-searching: 2.0.5
+      comment-parser: 1.4.5
+      mdast-util-from-markdown: 2.0.2
+      prettier: 3.8.1
+    transitivePeerDependencies:
+      - supports-color
+
+  prettier@3.8.1: {}
+
+  unist-util-stringify-position@4.0.0:
+    dependencies:
+      '@types/unist': 3.0.3

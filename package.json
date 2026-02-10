@@ -1,0 +1,22 @@
+{
+  "name": "hyprshell",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.12.1",
+  "engines": {
+    "gjs": ">=1.79.0"
+  },
+  "os": [
+    "linux"
+  ],
+  "scripts": {
+    "dev": "ags run src/app.ts"
+  },
+  "dependencies": {
+    "ags": "*",
+    "ags-ts": "^1.0.6",
+    "fuse.js": "^7.1.0",
+    "gnim": "*",
+    "gnim-hooks": "^1.0.0",
+    "gnim-schemas": "^0.3.0"
+  }
+}
