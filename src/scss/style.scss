@@ -2,19 +2,22 @@
 $fg-color: #{"@theme_fg_color"};
 $bg-color: #{"@theme_bg_color"};
 
-window.Bar {
-  background: transparent;
-  color: $fg-color;
-  font-weight: bold;
+window.status-bar {
+    background: rgba(0, 0, 0, 0.5);
+    color: $fg-color;
 
-  > centerbox {
-    background: $bg-color;
-    border-radius: 10px;
-    margin: 8px;
-  }
+    > centerbox {
+        backdrop-filter: blur(20px);
+        margin: 2px;
+    }
 
-  button {
-    border-radius: 8px;
-    margin: 2px;
-  }
+    button {
+        background: transparent;
+        border-radius: 2px;
+        margin: 2px;
+    }
+}
+
+window.dock {
+    margin: 4px;
 }

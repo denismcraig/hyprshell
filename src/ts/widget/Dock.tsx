@@ -11,7 +11,7 @@ export default function Dock(gdkmonitor: Gdk.Monitor) {
     <window
       visible
       name="dock"
-      class="Dock"
+      class="dock"
       gdkmonitor={gdkmonitor}
       exclusivity={Astal.Exclusivity.EXCLUSIVE}
       anchor={BOTTOM | LEFT | RIGHT}

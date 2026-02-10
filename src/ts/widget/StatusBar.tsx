@@ -11,7 +11,7 @@ export default function StatusBar(gdkmonitor: Gdk.Monitor) {
     <window
       visible
       name="status-bar"
-      class="StatusBar"
+      class="status-bar"
       gdkmonitor={gdkmonitor}
       exclusivity={Astal.Exclusivity.EXCLUSIVE}
       anchor={TOP | LEFT | RIGHT}
