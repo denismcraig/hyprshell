@@ -18,7 +18,12 @@
   };
 
   outputs =
-    inputs@{ ags, flake-parts, ... }:
+    inputs@{
+      astal,
+      ags,
+      flake-parts,
+      ...
+    }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
         # To import an internal flake module: ./other.nix
@@ -34,22 +39,83 @@
       perSystem =
         {
           config,
+          lib,
           pkgs,
           system,
           ...
         }:
-        # let
-        #   colorshell = pkgs.callPackage ./nix/colorshell.nix { inherit inputs'; };
-        # in
+        let
+          packageJson = lib.importJSON ./package.json;
+          name = packageJson.name;
+          version = packageJson.version;
+        in
         {
-          # packages = {
-          #   inherit colorshell;
-          #   default = colorshell;
-          # };
+          packages.default = pkgs.stdenv.mkDerivation {
+            inherit name version;
+            src = ./.;
+
+            nativeBuildInputs = with pkgs; [
+              wrapGAppsHook3
+              gobject-introspection
+              ags.packages.${system}.default
+            ];
+
+            buildInputs = [
+              pkgs.glib
+              pkgs.gjs
+              astal.packages.${system}.io
+              astal.packages.${system}.astal4
+              astal.packages.${system}.apps
+              astal.packages.${system}.auth
+              astal.packages.${system}.battery
+              astal.packages.${system}.bluetooth
+              astal.packages.${system}.hyprland
+              astal.packages.${system}.mpris
+              astal.packages.${system}.network
+              astal.packages.${system}.notifd
+              astal.packages.${system}.tray
+              astal.packages.${system}.wireplumber
+            ];
+
+            buildPhase = ''
+              runHook preBuild
+              mkdir -p build
+              ags bundle ./src/app.ts ./build/${name} \
+                --gtk 4 \
+                --root ./src \
+                --define "DEVEL=false" \
+                --define "HYPRSHELL_VERSION='${version}'"
+              runHook postBuild
+            '';
+
+            installPhase = ''
+              runHook preInstall
+              mkdir -p $out/bin
+              cp -rp ./build/${name} $out/bin/
+              runHook postInstall
+            '';
+
+            preFixup = ''
+              gappsWrapperArgs+=(
+                --prefix PATH : ${
+                  lib.makeBinPath [
+                    # runtime executables
+                    pkgs.dart-sass
+                    pkgs.glib
+                    pkgs.socat
+                  ]
+                }
+              )
+            '';
+          };
 
           devShells.default = pkgs.mkShell {
             buildInputs = [
-              (ags.packages.${system}.default)
+              (ags.packages.${system}.default.override {
+                extraPackages = [
+                  # cherry pick packages
+                ];
+              })
             ];
 
             packages = with pkgs; [
