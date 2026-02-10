@@ -1,3 +1,5 @@
+/** biome-ignore-all lint/a11y/useButtonType: not required */
+/** biome-ignore-all lint/a11y/noLabelWithoutControl: not required */
 import { Astal, type Gdk, Gtk } from "ags/gtk4";
 import app from "ags/gtk4/app";
 import { execAsync } from "ags/process";

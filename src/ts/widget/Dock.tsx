@@ -1,4 +1,5 @@
 // Ripped and adapted from epik-shell
+/** biome-ignore-all lint/style/noNonNullAssertion: because */
 
 import AstalHyprland from "gi://AstalHyprland";
 import { createBinding, createEffect, createState, onCleanup } from "ags";
