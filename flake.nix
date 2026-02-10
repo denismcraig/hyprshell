@@ -79,7 +79,7 @@
             buildPhase = ''
               runHook preBuild
               mkdir -p build
-              ags bundle ./src/app.ts ./build/${name} \
+              ags bundle ./src/app.tsx ./build/${name} \
                 --gtk 4 \
                 --root ./src \
                 --define "DEVEL=false" \
@@ -110,14 +110,23 @@
 
           devShells.default = pkgs.mkShell {
             buildInputs = [
-              (ags.packages.${system}.default.override {
-                extraPackages = [
-                  # cherry pick packages
-                ];
-              })
+              ags.packages.${system}.default
             ];
 
             packages = with pkgs; [
+              ags.packages.${system}.default
+              astal.packages.${system}.io
+              astal.packages.${system}.astal4
+              astal.packages.${system}.apps
+              astal.packages.${system}.auth
+              astal.packages.${system}.battery
+              astal.packages.${system}.bluetooth
+              astal.packages.${system}.hyprland
+              astal.packages.${system}.mpris
+              astal.packages.${system}.network
+              astal.packages.${system}.notifd
+              astal.packages.${system}.tray
+              astal.packages.${system}.wireplumber
               corepack_24
               nodejs_24
             ];

@@ -3,7 +3,11 @@ import { Astal, Gtk, Gdk } from "ags/gtk4";
 import { execAsync } from "ags/process";
 import { createPoll } from "ags/time";
 
-export default function StatusBar(gdkmonitor: Gdk.Monitor) {
+type Props = {
+  gdkmonitor: Gdk.Monitor;
+};
+
+export default function StatusBar({ gdkmonitor }: Props) {
   const time = createPoll("", 1000, "date");
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor;
 

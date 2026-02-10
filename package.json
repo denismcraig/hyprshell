@@ -9,7 +9,8 @@
     "linux"
   ],
   "scripts": {
-    "dev": "ags run src/app.ts"
+    "dev": "ags run src/app.tsx",
+    "types": "ags types -u -d ."
   },
   "dependencies": {
     "ags": "*",
@@ -18,5 +19,8 @@
     "gnim": "*",
     "gnim-hooks": "^1.0.0",
     "gnim-schemas": "^0.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.14"
   }
 }
