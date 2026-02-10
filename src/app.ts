@@ -8,7 +8,7 @@ app.start({
   css: style,
   requestHandler(argv: string[], response: (response: string) => void) {
     console.log("request", ...argv);
-    response("hello friend");
+    response(["hello friend", ...argv].join(","));
   },
   main() {
     app.get_monitors().map(StatusBar);
