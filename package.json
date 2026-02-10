@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "ags run src/app.tsx",
-    "types": "ags types -u -d ."
+    "types": "ags types 'Astal*' --ignore Gtk3 --ignore Astal3 -u -d ."
   },
   "dependencies": {
     "ags": "*",

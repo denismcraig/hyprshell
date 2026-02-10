@@ -47,6 +47,26 @@
           packageJson = lib.importJSON ./package.json;
           name = packageJson.name;
           version = packageJson.version;
+
+          buildInputs = [
+            (ags.packages.${system}.default.override {
+              extraPackages = [
+                # cherry pick packages
+                astal.packages.${system}.io
+                astal.packages.${system}.astal4
+                astal.packages.${system}.apps
+                astal.packages.${system}.auth
+                astal.packages.${system}.battery
+                astal.packages.${system}.bluetooth
+                astal.packages.${system}.hyprland
+                astal.packages.${system}.mpris
+                astal.packages.${system}.network
+                astal.packages.${system}.notifd
+                astal.packages.${system}.tray
+                astal.packages.${system}.wireplumber
+              ];
+            })
+          ];
         in
         {
           packages.default = pkgs.stdenv.mkDerivation {
@@ -109,27 +129,13 @@
           };
 
           devShells.default = pkgs.mkShell {
-            buildInputs = [
-              ags.packages.${system}.default
-            ];
-
-            packages = with pkgs; [
-              ags.packages.${system}.default
-              astal.packages.${system}.io
-              astal.packages.${system}.astal4
-              astal.packages.${system}.apps
-              astal.packages.${system}.auth
-              astal.packages.${system}.battery
-              astal.packages.${system}.bluetooth
-              astal.packages.${system}.hyprland
-              astal.packages.${system}.mpris
-              astal.packages.${system}.network
-              astal.packages.${system}.notifd
-              astal.packages.${system}.tray
-              astal.packages.${system}.wireplumber
-              corepack_24
-              nodejs_24
-            ];
+            packages =
+              with pkgs;
+              [
+                corepack_24
+                nodejs_24
+              ]
+              ++ buildInputs;
           };
         };
       flake = {
