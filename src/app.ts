@@ -1,10 +1,12 @@
 import app from "ags/gtk4/app";
-import style from "./style.scss";
-import Bar from "./widget/Bar";
+import style from "./scss/style.scss";
+import StatusBar from "./ts/widget/StatusBar";
+import Dock from "./ts/widget/Dock";
 
 app.start({
   css: style,
   main() {
-    app.get_monitors().map(Bar);
+    app.get_monitors().map(StatusBar);
+    app.get_monitors().map(Dock);
   },
 });
