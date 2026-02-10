@@ -6,6 +6,10 @@ import Dock from "./ts/widget/Dock";
 app.start({
   instanceName: "hyprshell",
   css: style,
+  requestHandler(argv: string[], response: (response: string) => void) {
+    console.log("request", ...argv);
+    response("hello friend");
+  },
   main() {
     app.get_monitors().map(StatusBar);
     app.get_monitors().map(Dock);
