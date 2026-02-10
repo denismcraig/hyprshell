@@ -5,6 +5,7 @@ import AstalHyprland from "gi://AstalHyprland";
 import { createBinding, createEffect, createState, onCleanup } from "ags";
 import { Astal, type Gdk, Gtk } from "ags/gtk4";
 import app from "ags/gtk4/app";
+import DockApps from "../components/DockApps";
 
 type Props = JSX.IntrinsicElements["window"] & {
   gdkmonitor: Gdk.Monitor;
@@ -138,7 +139,7 @@ export default function Dock({ gdkmonitor, ...props }: Props) {
       />
       <box>
         <box hexpand />
-        {/* Dock apps go here ! */}
+        <DockApps />
         <box hexpand />
       </box>
     </window>
