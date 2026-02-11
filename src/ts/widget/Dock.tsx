@@ -30,10 +30,12 @@ const [heightVar, setHeightVar] = createState(0);
 const [cursorInDock, setCursorInDock] = createState(false);
 
 const updateVisibility = () => {
-  return (
-    hyprland.get_workspace(hyprland.get_focused_workspace().id)?.get_clients()
-      .length <= 0
-  );
+  const focusedWorkspace = hyprland.get_focused_workspace();
+  if (focusedWorkspace === null) {
+    return false;
+  }
+
+  return hyprland.get_workspace(focusedWorkspace.id)?.get_clients().length <= 0;
 };
 
 export function DockHover({ gdkmonitor }: Props) {

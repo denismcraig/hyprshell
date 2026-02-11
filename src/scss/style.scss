@@ -2,6 +2,12 @@
 $fg-color: #{"@theme_fg_color"};
 $bg-color: #{"@theme_bg_color"};
 
+$accent: #{"@theme_selected_fg_color"};
+
+$window-border-radius: 8px;
+
+@use "./widget/dock.scss";
+
 window.status-bar {
     background: rgba(0, 0, 0, 0.5);
     color: $fg-color;
@@ -15,8 +21,4 @@ window.status-bar {
         border-radius: 2px;
         margin: 2px;
     }
-}
-
-window.dock {
-    margin: 4px;
 }
