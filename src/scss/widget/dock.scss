@@ -1,29 +1,19 @@
 @use "sass:color";
-
-$fg-color: #fff;
-$bg-color: #000;
-
-$accent: #0f0;
-
-$window-border-radius: 8px;
-
-.dock-padding {
-    color: transparent;
-    padding: 1px;
-}
+@use "../theme.scss";
 
 .dock-container {
-    padding: 4px;
+    padding: 2px;
 
     .media-player {
         min-width: 180px;
-        background-color: color.adjust($fg-color, $alpha: -0.75);
+        background-color: color.adjust(
+            theme.$color-darkest-blue,
+            $alpha: -0.75
+        );
         padding: 0.5rem;
         margin-left: 0.5rem;
-        border-radius: $window-border-radius;
 
         .cover {
-            border-radius: $window-border-radius;
             margin-right: 0.3rem;
         }
     }
@@ -31,12 +21,12 @@ $window-border-radius: 8px;
     .app-button {
         image {
             transition: -gtk-icon-size cubic-bezier(0.25, 1, 0.5, 1) 100ms;
+            transition: margin-bottom cubic-bezier(0.25, 1, 0.5, 1) 100ms;
         }
 
         .box {
-            padding: 0.2rem;
-            min-width: 45px;
-            min-height: 45px;
+            min-width: 40px;
+            min-height: 40px;
         }
 
         &:hover {
@@ -49,17 +39,17 @@ $window-border-radius: 8px;
 
         &.focused {
             .indicator {
-                min-width: 25px;
+                background-color: theme.$color-cyan;
+                min-width: 40px;
             }
         }
 
         .indicator {
-            min-width: 4px;
-            min-height: 4px;
-            border-radius: $window-border-radius;
-            background-color: $accent;
-            margin-bottom: 3px;
-            transition: min-width 0.4s ease-in-out;
+            min-width: 32px;
+            min-height: 3px;
+            background-color: theme.$color-red;
+            transition: background-color 0.1s ease-out;
+            transition: min-width 0.1s ease-out;
         }
     }
 }

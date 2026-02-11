@@ -1,78 +1,36 @@
 @use "sass:color";
-
-$base00: #161b22;
-$base01: #30363d;
-$base02: #484f58;
-$base03: #6e7681;
-$base04: #8b949e;
-$base05: #c9d1d9;
-$base06: #f0f6fc;
-$base07: #ffffff;
-$base08: #f85149;
-$base09: #db6d28;
-$base0A: #bb8009;
-$base0B: #2ea043;
-$base0C: #2a9d9a;
-$base0D: #388bfd;
-$base0E: #a371f7;
-$base0F: #3d2f00;
-
-$fg-color: $base07;
-$bg-color: #000;
-
-$accent: $fg-color;
-$statusbar-btn-fg-color: $base02;
+@use "../theme.scss";
 
 window.statusbar {
     background: rgba(0, 0, 0, 0.5);
-    color: $fg-color;
-
-    > centerbox {
-        margin: 2px;
-    }
-
-    button {
-        background: transparent;
-        border-radius: 2px;
-        margin: 2px;
-    }
 }
 
 .statusbar-container {
+    padding: 8px;
+
     .workspace-container {
-        color: $statusbar-btn-fg-color;
-        margin: 2px;
-        padding: 2px;
-
         .workspace-button {
-            background-color: color.adjust(
-                $statusbar-btn-fg-color,
-                $alpha: -0.75
-            );
-            min-height: 0.15em;
-            min-width: 0.1rem;
+            margin: unset;
+            padding: unset;
+            background-color: transparent;
+            border: 2px solid theme.$color-grey;
             border-radius: 16px;
+            min-width: 0.75rem;
+            min-height: 0.75em;
+            transition: min-width 100ms ease-out;
 
-            transition: min-width 0.25s ease-out;
-
-            &:hover {
-                background-color: $statusbar-btn-fg-color;
-                &.occupied {
-                    background-color: $statusbar-btn-fg-color;
-                }
+            &.occupied {
+                background-color: color.adjust(theme.$color-grey, $alpha: -0.5);
             }
 
             &.active {
-                min-width: 1rem;
-                background-color: $accent;
+                min-width: 1.5rem;
+                background-color: theme.$color-grey;
             }
 
-            &.occupied {
-                box-shadow: unset;
-                background-color: $statusbar-btn-fg-color;
-                &.active {
-                    background-color: $accent;
-                }
+            &:hover {
+                background-color: theme.$color-cyan;
+                border-color: theme.$color-cyan;
             }
         }
     }

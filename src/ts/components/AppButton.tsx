@@ -24,14 +24,14 @@ export default function AppButton({
   client,
 }: Props) {
   // TODO: Work out if this is wanted/required in our setup
-  const substitute: Record<string, unknown> = {
-    Alacritty: "terminal",
-    localsend: "send-to",
-    "spotify-client": "org.gnome.Lollypop-spotify",
-    "org.gnome.Nautilus": "system-file-manager",
-  };
+  // const substitute: Record<string, unknown> = {
+  //   kitty: "terminal",
+  //   localsend: "send-to",
+  //   "spotify-client": "org.gnome.Lollypop-spotify",
+  //   "org.gnome.Nautilus": "system-file-manager",
+  // };
 
-  const iconName = `${substitute[app.iconName] ?? app.iconName}-symbolic`;
+  const iconName = app.iconName;
 
   return (
     <button

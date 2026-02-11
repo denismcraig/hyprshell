@@ -18,9 +18,9 @@ export default function DockApps() {
       </box>
       <Gtk.Separator orientation={Gtk.Orientation.VERTICAL} />
       <AppButton
-        app={{ iconName: "user-trash" } as AstalApps.Application}
-        onClicked={() => exec("nautilus trash:///")}
-        term={""}
+        app={{ iconName: "org.gnome.Nautilus" } as AstalApps.Application}
+        onClicked={() => exec("nautilus")}
+        term={"nautilus"}
       />
     </box>
   );
