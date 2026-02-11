@@ -14,10 +14,21 @@ export default function MediaPlayer({ player }: Props) {
     return <box />;
   }
 
-  const title = createBinding(player, "title").as((t) => t || "Unknown Track");
-  const artist = createBinding(player, "artist").as(
-    (a) => a || "Unknown Artist",
-  );
+  let rawTitle: string;
+  const title = createBinding(player, "title").as((t) => {
+    rawTitle = t;
+    return t.split("|")[0].trim();
+  });
+
+  const artist = createBinding(player, "artist").as((a) => {
+    if (a) {
+      return a;
+    }
+
+    return rawTitle.includes("|")
+      ? rawTitle.split("|")[1].trim()
+      : "Unknown Artist";
+  });
 
   const coverArt = createBinding(player, "coverArt");
   const playIcon = createBinding(player, "playbackStatus").as((s) =>
@@ -27,25 +38,27 @@ export default function MediaPlayer({ player }: Props) {
   );
 
   return (
-    <box cssClasses={["media-player"]} hexpand>
-      <image
-        overflow={Gtk.Overflow.HIDDEN}
-        pixelSize={35}
-        cssClasses={["cover"]}
-        file={coverArt}
-      />
-      <box orientation={Gtk.Orientation.VERTICAL} hexpand>
+    <box cssClasses={["media-player"]}>
+      {coverArt.peek() ? (
+        <image
+          overflow={Gtk.Overflow.HIDDEN}
+          pixelSize={35}
+          cssClasses={["cover"]}
+          file={coverArt}
+        />
+      ) : undefined}
+      <box orientation={Gtk.Orientation.VERTICAL}>
         <label
           ellipsize={Pango.EllipsizeMode.END}
           halign={Gtk.Align.START}
           label={title}
-          maxWidthChars={15}
+          maxWidthChars={32}
         />
         <label
           ellipsize={Pango.EllipsizeMode.END}
           halign={Gtk.Align.START}
           label={artist}
-          maxWidthChars={15}
+          maxWidthChars={32}
         />
       </box>
       <button

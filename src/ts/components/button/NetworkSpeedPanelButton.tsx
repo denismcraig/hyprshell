@@ -1,5 +1,5 @@
 /** biome-ignore-all lint/a11y/noLabelWithoutControl: not required */
-import useNetworkSpeed from "../hooks/useNetworkSpeed";
+import useNetworkSpeed from "../../hooks/useNetworkSpeed";
 import PanelButton from "./PanelButton";
 
 export default function NetworkSpeedPanelButton() {

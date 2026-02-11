@@ -1,0 +1,12 @@
+@use "sass:color";
+@use "../theme.scss";
+
+.media-player {
+    min-width: 256px;
+    background-color: color.adjust(theme.$color-darkest-blue, $alpha: -0.75);
+    padding: 0.1rem;
+
+    .cover {
+        margin-right: 0.3rem;
+    }
+}

@@ -1,18 +1,16 @@
 /** biome-ignore-all lint/a11y/useButtonType: not required */
 /** biome-ignore-all lint/a11y/noLabelWithoutControl: not required */
-import { Astal, type Gdk, Gtk } from "ags/gtk4";
+import { Astal, type Gdk } from "ags/gtk4";
 import app from "ags/gtk4/app";
-import { execAsync } from "ags/process";
-import { createPoll } from "ags/time";
-import NetworkSpeedPanelButton from "../components/NetworkSpeedPanelButton";
-import WorkspacesPanelButton from "../components/WorkspacesPanelButton";
-import TimePanelButton from "../components/TimePanelButton";
 import { onCleanup } from "gnim";
+import QSPanelButton from "../components/button/QSPanelButton";
+import TimePanelButton from "../components/button/TimePanelButton";
+import WorkspacesPanelButton from "../components/button/WorkspacesPanelButton";
 
 function Start() {
   return (
     <box $type="start">
-      <NetworkSpeedPanelButton />
+      <QSPanelButton />
     </box>
   );
 }

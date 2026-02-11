@@ -1,18 +1,24 @@
 import { createBinding, For, This } from "ags";
 import app from "ags/gtk4/app";
 import style from "./scss/style.scss";
-import StatusBar from "./ts/widget/StatusBar";
-import Dock from "./ts/widget/Dock";
+import TopBar from "./ts/window/TopBar";
+import DateMenu from "./ts/components/DateMenu";
+import BottomBar from "./ts/window/BottomBar";
+import PowerMenu from "./ts/window/PowerMenu";
+import VerificationWindow from "./ts/window/VerificationWindow";
 
 function ui() {
   const monitors = createBinding(app, "monitors");
+  DateMenu();
+  PowerMenu();
+  VerificationWindow();
 
   return (
     <For each={monitors}>
       {(monitor) => (
         <This this={app}>
-          <StatusBar gdkmonitor={monitor} />
-          <Dock gdkmonitor={monitor} />
+          <TopBar gdkmonitor={monitor} />
+          <BottomBar gdkmonitor={monitor} />
         </This>
       )}
     </For>

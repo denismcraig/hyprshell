@@ -2,7 +2,7 @@
 import AstalApps from "gi://AstalApps";
 import AstalHyprland from "gi://AstalHyprland";
 import { Accessor, createBinding, createComputed, For } from "ags";
-import AppButton from "./AppButton";
+import AppButton from "./button/AppButton";
 
 const hyprland = AstalHyprland.get_default();
 const application = new AstalApps.Apps();

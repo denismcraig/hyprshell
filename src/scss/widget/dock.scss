@@ -1,55 +1,37 @@
 @use "sass:color";
 @use "../theme.scss";
 
-.dock-container {
-    padding: 2px;
+.app-button {
+    image {
+        transition: -gtk-icon-size cubic-bezier(0.25, 1, 0.5, 1) 100ms;
+        transition: margin-bottom cubic-bezier(0.25, 1, 0.5, 1) 100ms;
+    }
 
-    .media-player {
-        min-width: 180px;
-        background-color: color.adjust(
-            theme.$color-darkest-blue,
-            $alpha: -0.75
-        );
-        padding: 0.5rem;
-        margin-left: 0.5rem;
+    .box {
+        min-width: 40px;
+        min-height: 40px;
+    }
 
-        .cover {
-            margin-right: 0.3rem;
+    &:hover {
+        background-color: transparent;
+        image {
+            margin-bottom: 10px;
+            -gtk-icon-size: 4px;
         }
     }
 
-    .app-button {
-        image {
-            transition: -gtk-icon-size cubic-bezier(0.25, 1, 0.5, 1) 100ms;
-            transition: margin-bottom cubic-bezier(0.25, 1, 0.5, 1) 100ms;
-        }
-
-        .box {
-            min-width: 40px;
-            min-height: 40px;
-        }
-
-        &:hover {
-            background-color: transparent;
-            image {
-                margin-bottom: 10px;
-                -gtk-icon-size: 4px;
-            }
-        }
-
-        &.focused {
-            .indicator {
-                background-color: theme.$color-cyan;
-                min-width: 40px;
-            }
-        }
-
+    &.focused {
         .indicator {
-            min-width: 32px;
-            min-height: 3px;
-            background-color: theme.$color-red;
-            transition: background-color 0.1s ease-out;
-            transition: min-width 0.1s ease-out;
+            background-color: theme.$color-cyan;
+            min-width: 40px;
         }
+    }
+
+    .indicator {
+        min-width: 32px;
+        min-height: 3px;
+        background-color: theme.$color-red;
+        transition: background-color 0.1s ease-out;
+        transition: min-width 0.1s ease-out;
     }
 }
