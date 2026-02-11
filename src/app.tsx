@@ -21,7 +21,7 @@ function ui() {
 }
 
 app.start({
-  instanceName: "hyprshell",
+  instanceName: "hyprshell-dev",
   css: style,
   requestHandler(argv: string[], response: (response: string) => void) {
     response(["hello friend", ...argv].join(","));

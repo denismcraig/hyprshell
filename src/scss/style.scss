@@ -7,18 +7,4 @@ $accent: #{"@theme_selected_fg_color"};
 $window-border-radius: 8px;
 
 @use "./widget/dock.scss";
-
-window.status-bar {
-    background: rgba(0, 0, 0, 0.5);
-    color: $fg-color;
-
-    > centerbox {
-        margin: 2px;
-    }
-
-    button {
-        background: transparent;
-        border-radius: 2px;
-        margin: 2px;
-    }
-}
+@use "./widget/statusbar.scss";
