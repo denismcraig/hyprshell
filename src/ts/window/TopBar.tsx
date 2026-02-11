@@ -6,6 +6,7 @@ import { onCleanup } from "gnim";
 import QSPanelButton from "../components/button/QSPanelButton";
 import TimePanelButton from "../components/button/TimePanelButton";
 import WorkspacesPanelButton from "../components/button/WorkspacesPanelButton";
+import { Tray } from "../components/Tray";
 
 function Start() {
   return (
@@ -26,6 +27,7 @@ function Center() {
 function End() {
   return (
     <box $type="end">
+      <Tray />
       <TimePanelButton />
     </box>
   );
