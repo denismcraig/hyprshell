@@ -7,7 +7,14 @@ import AppButton from "./button/AppButton";
 const hyprland = AstalHyprland.get_default();
 const application = new AstalApps.Apps();
 
-const apps: string[] = ["kitty", "slack", "zeditor", "zen"];
+const apps: string[] = [
+  "dev.zed.Zed",
+  "discord",
+  "kitty",
+  "slack",
+  "steam",
+  "zen-beta",
+];
 
 export default function AppsList() {
   const pinnedApps = new Accessor(() =>
