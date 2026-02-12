@@ -1,7 +1,6 @@
 import { createBinding, For, This } from "ags";
 import app from "ags/gtk4/app";
 import style from "./scss/style.scss";
-import TopBar from "./ts/window/TopBar";
 import DateMenu from "./ts/components/DateMenu";
 import BottomBar from "./ts/window/BottomBar";
 import PowerMenu from "./ts/window/PowerMenu";
@@ -17,7 +16,6 @@ function ui() {
     <For each={monitors}>
       {(monitor) => (
         <This this={app}>
-          <TopBar gdkmonitor={monitor} />
           <BottomBar gdkmonitor={monitor} />
         </This>
       )}
