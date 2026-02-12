@@ -8,12 +8,12 @@ const hyprland = AstalHyprland.get_default();
 const application = new AstalApps.Apps();
 
 const apps: string[] = [
-  "dev.zed.Zed",
-  "discord",
   "kitty",
-  "slack",
-  "steam",
   "zen-beta",
+  "dev.zed.Zed",
+  "steam",
+  "discord",
+  "slack",
 ];
 
 export default function AppsList() {
